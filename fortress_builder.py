@@ -7,7 +7,7 @@ for the MemZero-WSL system.
 """
 
 import sys
-from block import Block, MemoryBlock, ProcessorBlock, StorageBlock
+from block import MemoryBlock, ProcessorBlock, StorageBlock
 from fortress import Fortress
 
 

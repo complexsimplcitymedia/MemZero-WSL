@@ -31,7 +31,7 @@ def test_block_stacking():
     base = Block("base", 100, 5)
     top = Block("top", 50, 3)
     
-    assert base.stack(top) == True
+    assert base.stack(top)
     assert len(base.blocks_above) == 1
     assert base.get_total_height() == 2
     
@@ -80,8 +80,8 @@ def test_fortress_foundation():
     block1 = MemoryBlock(100, 5)
     block2 = ProcessorBlock(150, 7)
     
-    assert fortress.add_foundation_block(block1) == True
-    assert fortress.add_foundation_block(block2) == True
+    assert fortress.add_foundation_block(block1)
+    assert fortress.add_foundation_block(block2)
     assert len(fortress.foundation_blocks) == 2
     assert fortress.total_blocks == 2
     
